@@ -1,5 +1,5 @@
 set OPENSSL_DIR=%LIBRARY_PREFIX%
-set "RUSTFLAGS=-C lto=thin"
+set CARGO_PROFILE_RELEASE_LTO=thin
 set "MATURIN_PEP517_ARGS=-v"
 
 cd python

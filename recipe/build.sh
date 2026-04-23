@@ -4,7 +4,7 @@ set -euxo pipefail
 
 export OPENSSL_DIR=$PREFIX
 
-export RUSTFLAGS="-C lto=thin"
+export CARGO_PROFILE_RELEASE_LTO=thin
 export MATURIN_PEP517_ARGS="-v"
 
 pushd python
