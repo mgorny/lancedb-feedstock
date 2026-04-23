@@ -27,10 +27,10 @@ requirements:
       then: 
         - python
         - cross-python_${{ host_platform }}
-        - maturin >=1.4
+        - maturin >=1.12
   host:
     - python
-    - maturin >=1.4
+    - maturin >=1.12
     - pip
     - openssl
   run:
