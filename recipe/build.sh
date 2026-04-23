@@ -4,7 +4,7 @@ set -euxo pipefail
 
 export OPENSSL_DIR=$PREFIX
 
-export RUSTFLAGS="-C codegen-units=8"
+export RUSTFLAGS="-C linker=clang -C link-args=-fuse-ld=lld"
 export MATURIN_PEP517_ARGS="-v"
 
 pushd python

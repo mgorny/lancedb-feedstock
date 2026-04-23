@@ -1,4 +1,6 @@
 set OPENSSL_DIR=%LIBRARY_PREFIX%
+set "RUSTFLAGS=-C linker=clang -C link-args=-fuse-ld=lld"
+set "MATURIN_PEP517_ARGS=-v"
 
 cd python
 
