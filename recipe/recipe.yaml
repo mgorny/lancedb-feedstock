@@ -17,9 +17,10 @@ build:
 
 requirements:
   build:
-    - ${{ compiler("clang") }}
+    - ${{ compiler("c") }}
     - ${{ stdlib("c") }}
     - ${{ compiler("rust") }}
+    - clang
     - lld
     - cargo-bundle-licenses
     - pkg-config
